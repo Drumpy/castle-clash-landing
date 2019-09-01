@@ -1,11 +1,11 @@
-* {
-	margin: 0;
-	padding: 0;
+html {
+	scroll-behavior: smooth;
 }
 
 body {
 	background: #f5eac7;
 	font-family: 'Oswald', sans-serif;
+	cursor: url(images/sword.svg), auto;
 }
 
 main,
@@ -15,42 +15,22 @@ section {
 	width: 100%;
 }
 
-header {
-	min-height: 800px;
-}
-
-.hero {
-	width: 100%;
-	background: url(images/header_bg.png) center top no-repeat #f5eac7;
-	background-size: cover;
-	text-align: center;
-}
-
-.hero-txt {
-	color: #f5eac7;
+h2 {
 	font-family: 'Sigmar One', cursive;
 	font-size: 45px;
-	padding-top: 80px;
+	margin-bottom: 35px;
 	text-shadow: 0px 3px 0px #b2a98f,
-                 0px 14px 10px rgba(0,0,0,0.15),
-                 0px 24px 2px rgba(0,0,0,0.1),
-                 0px 34px 30px rgba(0,0,0,0.1);
 }
 
-.btn {
-	display: inline-block;
-	margin-top: 66vh;
-	text-decoration: none;
-	color: #f5eac7;
-	font-size: 40px;
-	font-weight: bold;
-	padding: 0 40px;
-	border-radius: 50px;
-	background: rgb(8, 40, 61);
-	line-height: 60px;
-	-webkit-box-shadow: 0px 0px 25px -10px rgba(8, 40, 61, .6);
-	-moz-box-shadow: 0px 0px 25px -10px rgba(8, 40, 61, .6);
-	box-shadow: 0px 0px 25px -10px rgba(8, 40, 61, .6);
+p {
+	font-size: 21px;
+	line-height: 25px
+}
+
+/* //////////// UTILITARIOS //////////// */
+
+.p-1 {
+ padding: 45px 0px;
 }
 
 .container {
@@ -71,66 +51,112 @@ header {
 	text-align: center;
 }
 
-.about {
-	margin-top: 0px;
+.txt-effect {
+	text-shadow: 0px 3px 0px #b2a98f,
+	0px 14px 10px rgba(0,0,0,0.15),
+	0px 24px 2px rgba(0,0,0,0.1),
+	0px 34px 30px rgba(0,0,0,0.1);
 }
 
-.about p {
+/* //////////////////////////////////////// */
+
+.hero {
+	position: relative;
 	width: 100%;
+	background: url(images/header_bg.png) center top no-repeat #f5eac7;
+	background-size: cover;
+	text-align: center;
 }
 
-.about img {
-	width: 200%;
-}
-
-.texto {
-	margin-top: -90px;
-	margin-left: 150px;
-}
-
-h2 {
+.hero-txt {
+	color: #f5eac7;
 	font-family: 'Sigmar One', cursive;
-	font-size: 40px;
-	margin-bottom: 40px;
+	font-size: 55px;
+	padding-top: 80px;
 }
 
-.texto p {
-	font-size: 22px;
-	line-height: 25px;
+.btn {
+	display: inline-block;
+	margin-top: 63vh;
+	text-decoration: none;
+	color: #f5eac7;
+	font-size: 33px;
+	font-family: 'Sigmar One', cursive;
+	padding: 0 30px;
+	border-radius: 50px;
+	background: rgb(8, 40, 61);
+	line-height: 80px;
+	-webkit-box-shadow: 0px 0px 25px -10px rgba(8, 40, 61, .6);
+	-moz-box-shadow: 0px 0px 25px -10px rgba(8, 40, 61, .6);
+	box-shadow: 0px 0px 25px -10px rgba(8, 40, 61, .6);
+	text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+								 0px 34px 30px rgba(0,0,0,0.1);
+}
+
+.about {
+	position: relative;
+	margin-top: 30px;
+}
+.about img {
+	width: 180%;
+	padding-right: 150px;
+	padding-top: 60px;
 }
 
 .title {
 	width: 750px;
-	margin: 0 auto;
+	margin: 0 auto 45px auto;
 }
 
-.claro {
-color: #f5eac7;
-width: 45%;
-margin: 0 100px 0 50px;
-}
-
-.features {
-	background: url(./fondo_panda.jpg) center no-repeat;
-}
-
-.container-2 {
-	position: relative;
-	max-width: 980px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.descarga2 {
-	padding-top: 45px;	
-}
-.descarga2 img {
-	padding: 0 10px;
-}
 .gameplay {
+	position: relative;
 	padding-bottom: 45px;
 }
 
 .video {
 	margin-bottom: 20px;
+}
+
+.features {
+	position: relative;
+	background: url(images/fondo_panda.jpg) 0 center no-repeat;
+	background-size: cover;
+}
+
+.features img {
+	position: absolute;
+	bottom: -45px;
+	right: 0;
+}
+
+.claro {
+	color: #f5eac7;
+	padding-left: 55px;
+}
+
+#download {
+	position: relative;
+	padding-top: 80px;
+	z-index: 99;
+}
+
+#download img {
+	margin: 40px 20px 0 20px;
+	border-radius: 10px;
+}
+
+#download img:hover {
+	transform: scale(1.02);
+	box-shadow: 0px 0px 25px -10px rgba(8, 40, 61, .7);
+}
+
+
+.footer {
+	height: 700px;
+	width: 100%;
+	background: url(images/footer_bg.png) center 0 no-repeat;
+	background-size: cover;
+	text-align: center;
+	margin-top: -230px;
 }
